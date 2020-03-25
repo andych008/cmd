@@ -1,2 +1,2 @@
 @echo off
-%Android%\emulator\emulator.exe -avd arm_19
+%ANDROID_SDK%\emulator\emulator.exe -avd arm_19
