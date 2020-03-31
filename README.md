@@ -73,4 +73,8 @@
 
 
 
+## 有用的脚本
+
+- `adb shell getprop | findstr product`或`adb shell cat /system/build.prop | findstr product` 
+    >查看手机设备信息
 
