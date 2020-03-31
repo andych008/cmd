@@ -8,7 +8,7 @@
 - `ANDROID_SDK`  : Android Sdk所在目录(绝对路径)，如：`D:\Android\Sdk`
 
 ## 注释
----
+
 - `adbas` 
     >启动手机里的android_server
 - `adbas6.8`
@@ -27,19 +27,23 @@
     >push文件elf_file到`/data/local/tmp`，并设置为可执行
 - `adbp parma1 parma2`
     >push文件parma1到`/data/local/tmp`，重命名为parma2，并设置为可执行
-- `adbt app-debug.apk`
+- `adbit app-debug.apk`
     >即`adb install -t app-debug.apk`。安装`android:testOnly="true"`的apk。
 - `adbls`
     >即`adb shell -x ls -l /data/local/tmp`。列出`/data/local/tmp`下的所有文件
 - `adbrm xxx`
     >即`adb shell -x rm /data/local/tmp/xxx`。删除`/data/local/tmp`下的文件xxx
+- `adbu com.example.myapplication`
+    >即`adb shell pm uninstall --user 0 com.example.myapplication`。可以卸载预置app
+- `adbtop`
+    >即`adb shell dumpsys window | findstr mCurrentFocus`。显示已打开应用的包名
 
 
 
 
 ---
-- arm_19.bat
-- x86.24.bat
+- arm19.bat
+- x24.bat
     >即`%ANDROID_SDK%\emulator\emulator.exe -avd Pixel_2_API_24`
 
 
